@@ -7,9 +7,8 @@ public class Main {
         if (amount > 1000) {
             int replenishment = (balance + amount + amount / 100);
             System.out.println("Вы пополнили счет на " + amount + " рублей - бонус равен " + amount / 100 + " рубля/ей, итоговая сумма на балансе " + replenishment + " рубля/ей");
-        }
-        else  {
-            int replenishment2 = (int) (balance + amount);
+        } else {
+            int replenishment2 = balance + amount;
             System.out.println("Вы пополнили счет на " + balance + " рублей - бонусы не начислены, итоговая сумма на балансе " + replenishment2 + " рубля/ей");
         }
     }
